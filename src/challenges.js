@@ -45,7 +45,7 @@ function highestCount(array) {
     }
   }
   for (let index = 0; index < array.length; index += 1) {
-    if(indice == array[index])
+    if (indice === array[index])
       contador += 1;
   }
   return contador;
@@ -84,13 +84,13 @@ function fizzBuzz(array) {
 
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] % 3 === 0 && array[index] % 5 === 0) {
-        resultado.push(fizzBuzz);
+      resultado.push(fizzBuzz);
     } else if (array[index] % 5 === 0) {
-        resultado.push(buzz);
-    } else if (array[index] % 3 === 0){
-        resultado.push(fizz);
+      resultado.push(buzz);
+    } else if (array[index] % 3 === 0) {
+      resultado.push(fizz);
     } else {
-        resultado.push(bug);
+      resultado.push(bug);
     }
   }
   return resultado;
@@ -101,17 +101,17 @@ function encode(parametro) {
   let encodeParametro = '';
   for (let index in parametro) {
     if (parametro[index] === 'a') {
-        encodeParametro += 1;
+      encodeParametro += 1;
     } else if (parametro[index] === 'e') {
-        encodeParametro += 2;
+      encodeParametro += 2;
     } else if (parametro[index] === 'i') {
-        encodeParametro += 3;
+      encodeParametro += 3;
     } else if (parametro[index] === 'o') {
-        encodeParametro += 4;
+      encodeParametro += 4;
     } else if (parametro[index] === 'u') {
-        encodeParametro += 5;
+      encodeParametro += 5;
     } else {
-        encodeParametro += parametro[index];
+      encodeParametro += parametro[index];
     }
   }
   return encodeParametro;
@@ -121,17 +121,17 @@ function decode(parametro) {
   let decodeParametro = '';
   for (let index in parametro) {
     if (parametro[index] === 1) {
-        decodeParametro += 'a';
+      decodeParametro += 'a';
     } else if (parametro[index] === 2) {
-        decodeParametro += 'e';
+      decodeParametro += 'e';
     } else if (parametro[index] === 3) {
-        decodeParametro += 'i';
+      decodeParametro += 'i';
     } else if (parametro[index] === 4) {
-        decodeParametro += 'o';
+      decodeParametro += 'o';
     } else if (parametro[index] === 5) {
-        decodeParametro += 'u';
+      decodeParametro += 'u';
     } else {
-        decodeParametro += parametro[index];
+      decodeParametro += parametro[index];
     }
   }
   return decodeParametro;
