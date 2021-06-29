@@ -1,25 +1,25 @@
 // Desafio 10
 function techList(tech, name) {
-  if(tech.length === 0 || tech === null){
+  if (tech.length === 0 || tech === null) {
     return 'Vazio!'
   }
   let techSort = tech.sort()
   let temp
   let box=[]
   for (let index of techSort) {
-      temp=index;
-      index={};
-      index['tech']=temp;
-      index['name']=name;
+      temp = index;
+      index = {};
+      index['tech'] = temp;
+      index['name'] = name;
       box.push(index)
   }
-  
+
 return box
 }
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], 'bel'))
+
 
 // Desafio 11
-function highestCount (array){
+function tresNumerosIguais (array){
   let conferindo=array
   let contador=0
   for (let index=0; index<array.length; index+=1){
@@ -46,7 +46,7 @@ function generatePhoneNumber(array) {
     return "Array com tamanho incorreto.";
   } 
   for (let index=0; index<array.length; index += 1) {
-    if (array[index]<0 || array[index]>9 ||highestCount (array)===3){
+    if (array[index]<0 || array[index]>9 ||tresNumerosIguais (array)===3){
       return "não é possível gerar um número de telefone com esses valores"
     }
   }
@@ -76,9 +76,21 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  
+  let numbers = string.match(/\d+/g).map(Number)
+  let agua=0
+  for (let index of numbers){
+    agua+=index
+  }
+  if ( agua>1){
+  return agua +' copos de água'
+  }else {
+    return agua + ' copo de água'
+  }
+  
 }
+console.log(hydrate("1 cachaça, 5 cervejas e 1 copo de vinho"))
 
 module.exports = {
   generatePhoneNumber,
