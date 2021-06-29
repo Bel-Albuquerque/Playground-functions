@@ -37,9 +37,8 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     `Requisitos bônus:`
     - [11 - Crie uma função de Número de telefone](#11---crie-uma-função-de-número-de-telefone)
     - [12 - Crie uma função de Condição de existência de um triângulo](#12---crie-uma-função-de-condição-de-existência-de-um-triângulo)
-    - [13 - Crie uma função de Boas Vindas ao Bar da Trybe!](#13---crie-uma-função-de-boas-vindas-ao-bar-da-trybe!)
+    - [13 - Crie uma função de Boas Vindas ao Bar da Trybe!](#13---crie-uma-função-de-boas-vindas-ao-bar-da-trybe)
 - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
-- [Revisando um pull request](#revisando-um-pull-request)
 - [Avisos Finais](#avisos-finais)
 
 # Habilidades
@@ -78,14 +77,15 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ## Data de Entrega
 
-  - Serão `X` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
+  - Será `1` dia de projeto.
+  - Data de entrega para avaliação final do projeto: `06/07/2021 - 14:00h`.
 
 # Instruções para entregar seu projeto
 
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
+  * Antes de clonar este repositório, tenha certeza de que você **NÃO** está em um diretório que já é um repositório git.
   * `git clone git@github.com:tryber/sd-014-b-project-playground-functions.git`
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-014-b-project-playground-functions`
@@ -112,7 +112,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
         * `git status` (devem aparecer listados os arquivos em verde)
   * Faça o `commit` inicial
       * Exemplo:
-        * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
+        * `git commit -m 'Iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 5. Adicione a sua branch com o novo `commit` ao repositório remoto
@@ -492,13 +492,13 @@ String retornada:
 
 ---
 
-## Depois de terminar o desenvolvimento
+## (OPCIONAL) Depois de terminar o desenvolvimento
 
 Para **"entregar"** seu projeto, siga os passos a seguir:
 
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque outras pessoas estudantes da sua turma
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário** ou clique em **assign yourself**
   * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-014-b`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
