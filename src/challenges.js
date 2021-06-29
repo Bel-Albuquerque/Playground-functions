@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(par1, par2) {
-  if ( par1== true && par2== true) {
+  if ( par1 === true && par2 === true) {
     return true
     } else {
     return false
@@ -12,7 +12,7 @@ console.log(compareTrue(true, true))
 // Desafio 2
 function calcArea(base, height){
   let resultado;
-  resultado= (base*height)/2;
+  resultado = (base*height)/2;
   return resultado
 }
 console.log(calcArea(10, 50))
@@ -27,11 +27,9 @@ console.log(splitSentence ('go trybe'))
 
 // Desafio 4
 function concatName(parametro){
-  let resultado=[]
-  resultado.push(parametro[parametro.length -1])
-  resultado.push(parametro[0])
-  return resultado.toString('')
-  
+  let resultado = ''
+   resultado = parametro[parametro.length -1] + ', ' + parametro[0]
+   return resultado
 }
 
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
