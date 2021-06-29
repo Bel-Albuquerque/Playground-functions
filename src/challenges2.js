@@ -1,6 +1,9 @@
 // Desafio 10
 function techList(tech, name) {
-  let techSort= tech.sort()
+  if(tech.length === 0 || tech === null){
+    return 'Vazio!'
+  }
+  let techSort = tech.sort()
   let temp
   let box=[]
   for (let index of techSort) {
