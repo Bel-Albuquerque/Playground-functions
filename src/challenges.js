@@ -26,9 +26,15 @@ function splitSentence (string){
 console.log(splitSentence ('go trybe'))
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(parametro){
+  let resultado=[]
+  resultado.push(parametro[parametro.length -1])
+  resultado.push(parametro[0])
+  return resultado
+  
 }
+
+console.log(concatName(['foguete', 'não', 'tem', 'ré']))
 
 // Desafio 5
 function footballPoints() {
