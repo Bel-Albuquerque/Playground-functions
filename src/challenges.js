@@ -37,9 +37,12 @@ function concatName(parametro){
 console.log(concatName(['foguete', 'não', 'tem', 'ré']))
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let points;
+  points=3*wins +ties
+  return points
 }
+console.log(footballPoints(14, 8))
 
 // Desafio 6
 function highestCount() {
