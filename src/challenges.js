@@ -30,7 +30,7 @@ function concatName(parametro){
   let resultado=[]
   resultado.push(parametro[parametro.length -1])
   resultado.push(parametro[0])
-  return resultado
+  return resultado.toString('')
   
 }
 
