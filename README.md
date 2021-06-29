@@ -102,6 +102,7 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-sobrenome-playground-functions`
     * Exemplo: `git checkout -b joao-silva-playground-functions`
+  * **Faça o primeiro requisito do projeto antes de ir para o passo 4**
 
 4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
