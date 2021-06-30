@@ -7,26 +7,25 @@ function techList(tech, name) {
   let temp;
   let box = [];
   for (let index of techSort) {
-      temp = index;
-      index = {};
-      index['tech'] = temp;
-      index['name'] = name;
-      box.push(index);
+    temp = index;
+    index = {};
+    index['tech'] = temp;
+    index['name'] = name;
+    box.push(index);
   }
-
-return box
+return box;
 }
 
 // Desafio 11
 function tresNumerosIguais(array) {
   let conferindo = array;
   let contador = 0;
-  for (let index = 0; index < array.length; index += 1){
-    for (let confIndex = 0; confIndex < conferindo.length; confIndex += 1){
-      if (array[index] === conferindo[confIndex]){
-      contador += 1;
+  for (let index of array) {
+    for (let confIndex of conferindo) {
+      if (index === confIndex) {
+        contador += 1;
       }
-      if (contador >= 3){
+      if (contador >= 3) {
         return contador;
         break;
       }
@@ -37,40 +36,38 @@ function tresNumerosIguais(array) {
 }
 
 function generatePhoneNumber(array) {
-  if (array.length != 11) {
-    return "Array com tamanho incorreto.";
-  } 
-  for (let index = 0; index < array.length; index += 1) {
-    if (array[index] < 0 || array[index] > 9 ||tresNumerosIguais (array) === 3){
-      return "não é possível gerar um número de telefone com esses valores";
+  if (array.length !== 11) {
+    return 'Array com tamanho incorreto.';
+  }
+  for (let index of array) {
+    if (index < 0 || index > 9 || tresNumerosIguais(array) === 3) {
+      return 'Não é possível gerar um número de telefone com esses valores';
     }
   }
-  let prefixo ='(';
+  let prefixo = '(';
   for (let index = 0; index < 2; index += 1) {
-      prefixo += array[index]   ; 
+    prefixo += array[index];
   }
   let tel1 = prefixo + ') ';
   for (let index = 2; index < 7; index += 1) {
-      tel1 += array[index];
+    tel1 += array[index];
   }
   let telFinal = tel1 + '-';
-  for (let index =7 ; index < array.length; index += 1) {
-      telFinal += array[index];
+  for (let index = 7; index < array.length; index += 1) {
+    telFinal += array[index];
   }
-  
-      return telFinal;
+  return telFinal;
 }
 
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
-  if( lineA < lineB + lineC && lineA > Math.abs(lineB - lineC) &&
-  lineB < lineA + lineC && lineB > Math.abs(lineA - lineC) &&
-  lineC < lineB + lineA && lineC > Math.abs(lineB - lineA)) {
-    return true;
-  } else {
-    return false;
+  let resultado = false;
+  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC) 
+  && lineB < lineA + lineC && lineB > Math.abs(lineA - lineC) 
+  && lineC < lineB + lineA && lineC > Math.abs(lineB - lineA)) {
+    resiltado = true
   }
-
+  return resultado
 }
 
 // Desafio 13
@@ -81,13 +78,10 @@ function hydrate(string) {
     agua += index;
   }
   if (agua > 1) {
-  return agua + ' copos de água';
-  }else {
-    return agua + ' copo de água';
+    return agua + ' copos de água';
   }
-  
+  return agua + ' copo de água';
 }
-
 
 module.exports = {
   generatePhoneNumber,
