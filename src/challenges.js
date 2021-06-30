@@ -111,7 +111,7 @@ function decode(parametro) {
       decodeParametro += 'i';
     } else if (numero === '4') {
       decodeParametro += 'o';
-    } else if (numero === 5) {
+    } else if (numero === '5') {
       decodeParametro += 'u';
     } else {
       decodeParametro += numero;
