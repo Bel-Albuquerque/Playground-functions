@@ -13,7 +13,7 @@ function techList(tech, name) {
     index['name'] = name;
     box.push(index);
   }
-return box;
+  return box;
 }
 
 // Desafio 11
@@ -27,7 +27,6 @@ function tresNumerosIguais(array) {
       }
       if (contador >= 3) {
         return contador;
-        break;
       }
     }
     contador = 0;
@@ -62,12 +61,12 @@ function generatePhoneNumber(array) {
 // Desafio 12
 function triangleCheck(lineA, lineB, lineC) {
   let resultado = false;
-  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC) 
-  && lineB < lineA + lineC && lineB > Math.abs(lineA - lineC) 
+  if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC)
+  && lineB < lineA + lineC && lineB > Math.abs(lineA - lineC)
   && lineC < lineB + lineA && lineC > Math.abs(lineB - lineA)) {
-    resultado = true
+    resultado = true;
   }
-  return resultado
+  return resultado;
 }
 
 // Desafio 13

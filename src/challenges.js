@@ -59,8 +59,7 @@ function catAndMouse(mouse, cat1, cat2) {
   } else if (Math.abs(mouse - cat1) > Math.abs(mouse - cat2)) {
     return 'cat2';
   }
-return 'cat1';
-  
+  return 'cat1';
 }
 
 // Desafio 8
@@ -112,7 +111,7 @@ function decode(parametro) {
       decodeParametro += 'i';
     } else if (numero === '4') {
       decodeParametro += 'o';
-    } else if (numero === '5') {
+    } else if (numero === 5) {
       decodeParametro += 'u';
     } else {
       decodeParametro += numero;
