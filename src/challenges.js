@@ -100,15 +100,15 @@ function fizzBuzz(array) {
 function encode(parametro) {
   let encodeParametro = '';
   for (let index in parametro) {
-    if (parametro[index] === 'a') {
+    if (parametro[index] == 'a') {
       encodeParametro += 1;
-    } else if (parametro[index] === 'e') {
+    } else if (parametro[index] == 'e') {
       encodeParametro += 2;
-    } else if (parametro[index] === 'i') {
+    } else if (parametro[index] == 'i') {
       encodeParametro += 3;
-    } else if (parametro[index] === 'o') {
+    } else if (parametro[index] == 'o') {
       encodeParametro += 4;
-    } else if (parametro[index] === 'u') {
+    } else if (parametro[index] == 'u') {
       encodeParametro += 5;
     } else {
       encodeParametro += parametro[index];
@@ -120,15 +120,15 @@ function encode(parametro) {
 function decode(parametro) {
   let decodeParametro = '';
   for (let index in parametro) {
-    if (parametro[index] === 1) {
+    if (parametro[index] == 1) {
       decodeParametro += 'a';
-    } else if (parametro[index] === 2) {
+    } else if (parametro[index] == 2) {
       decodeParametro += 'e';
-    } else if (parametro[index] === 3) {
+    } else if (parametro[index] == 3) {
       decodeParametro += 'i';
-    } else if (parametro[index] === 4) {
+    } else if (parametro[index] == 4) {
       decodeParametro += 'o';
-    } else if (parametro[index] === 5) {
+    } else if (parametro[index] == 5) {
       decodeParametro += 'u';
     } else {
       decodeParametro += parametro[index];
