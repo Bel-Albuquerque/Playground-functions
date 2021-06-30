@@ -41,7 +41,7 @@ function generatePhoneNumber(array) {
   }
   for (let index of array) {
     if (index < 0 || index > 9 || tresNumerosIguais(array) === 3) {
-      return 'Não é possível gerar um número de telefone com esses valores';
+      return 'não é possível gerar um número de telefone com esses valores';
     }
   }
   let prefixo = '(';
@@ -65,7 +65,7 @@ function triangleCheck(lineA, lineB, lineC) {
   if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC) 
   && lineB < lineA + lineC && lineB > Math.abs(lineA - lineC) 
   && lineC < lineB + lineA && lineC > Math.abs(lineB - lineA)) {
-    resiltado = true
+    resultado = true
   }
   return resultado
 }
