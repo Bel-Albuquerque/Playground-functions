@@ -9,8 +9,8 @@ function techList(tech, name) {
   for (let index of techSort) {
     temp = index;
     index = {};
-    index['tech'] = temp;
-    index['name'] = name;
+    index.tech = temp;
+    index.name = name;
     box.push(index);
   }
   return box;
