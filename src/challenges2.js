@@ -43,18 +43,23 @@ function generatePhoneNumber(array) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  let prefixo = '(';
-  for (let index = 0; index < 2; index += 1) {
-    prefixo += array[index];
+  let telefone = "(xx) xxxxx-xxxx"
+  let telFinal=''
+  
+  for(let telIndex in telefone) {
+    for(let arIndex of array) {
+      if (telefone[telIndex] == "x") {
+        telFinal = telFinal + arIndex
+        array.shift()
+        break
+      }else {
+        telFinal += telefone[telIndex]
+        break
+      }
+    }
+    
   }
-  let tel1 = prefixo + ') ';
-  for (let index = 2; index < 7; index += 1) {
-    tel1 += array[index];
-  }
-  let telFinal = tel1 + '-';
-  for (let index = 7; index < array.length; index += 1) {
-    telFinal += array[index];
-  }
+  
   return telFinal;
 }
 
