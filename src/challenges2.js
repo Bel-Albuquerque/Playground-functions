@@ -43,13 +43,12 @@ function generatePhoneNumber(array) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
-  let telefone = "(xx) xxxxx-xxxx";
+  let telefone = '(xx) xxxxx-xxxx';
   let telFinal = '';
-  
   for (let telIndex in telefone) {
     for (let arIndex of array) {
-      if (telefone[telIndex] == "x") {
-        telFinal = telFinal + arIndex;
+      if (telefone[telIndex] === 'x') {
+        telFinal += arIndex;
         array.shift();
         break;
       } else {
@@ -57,9 +56,7 @@ function generatePhoneNumber(array) {
         break;
       }
     }
-    
   }
-  
   return telFinal;
 }
 
@@ -76,13 +73,13 @@ function triangleCheck(lineA, lineB, lineC) {
 
 // Desafio 13
 function hydrate(string) {
-  let agua = 0
+  let agua = 0;
   for (let index of string) {
     if (index > 0 && index <= 9) {
       agua += parseInt(index);
     }
   }
-    if (agua > 1) {
+  if (agua > 1) {
     return agua + ' copos de água';
   }
   return agua + ' copo de água';
